@@ -45,16 +45,51 @@ a { .ib; .pointer; }
       }
 
       article {
-        section {
+        section { .rel;
           &.visual {
+            &:after { .cnt; .abs; .lt(50%,0); .wh(1,100%); .bgc(#fff); .ml(-1); opacity: 0.5; z-index: 1; }
             .swiper {
               .swiper-slide { .wh(375,667); overflow: hidden; .rel;
                 img { .wh(110%,105%); transition: all 2s; .abs; .lt(50%,50%); transform: translate(-50%,-50%); }
-                .txt { .fs(52); color:#fff; .tl; .lh(48); .light; .abs; .lb(18,20); }
+                .txt { .tl; .abs; .lb(18,20); .wh(263,144);
+                  .t-inner { .rel; .f;
+                    p { .fs(52); color:#fff; .h(48); .lh(48); .light; .abs; .lt; overflow: hidden; .pt(48); .-box; transition-delay: 1s; transition: padding-top 1.5s;
+                      &:nth-child(1) { .t(0); transition-delay: 1.0s;}
+                      &:nth-child(2) { .t(48); transition-delay: 1.2s; }
+                      &:nth-child(3) { .t(96); transition-delay: 1.4s; }
+                    }
+                  }
+                }
                 &.swiper-slide-active, &.swiper-slide-prev {
                   img { .wf; height: auto; }
                 }
                 &.swiper-slide-active {
+                  .txt {
+                    .t-inner {
+                      p { .pt(0); }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &.top { .bgc(#e6e0d4); .h(707);
+            &:after { .cnt; .abs; .lt(50%,0); .wh(1,667); .bgc(#6a5121); .ml(-1); opacity: 0.5; z-index: 1; }
+            &:before { .cnt; .wh(187,40); .bgc(#fff); .abs; .lb; }
+            .top-inner {
+              div { .abs; .lt(18,0); overflow: hidden;
+                p { .fs(18); color:#11161c; .lh(22); .medium; text-transform: uppercase; }
+              }
+              .t1 { .t(20); .h(44);
+                p { .pt(44); .-box; }
+              }
+              .t2 { .lt(0,240);
+                .t2-inner { .rel; .wh(375,104); .l(0);
+                  p { .fs(52); .light; .lh(48); .block; .nowrap; .abs; .lt;
+                    s { color:#ee2023; }
+                    &:nth-child(1) { .ml(100%); }
+                    &:nth-child(2) { .t(56); }
+                  }
                 }
               }
             }

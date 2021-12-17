@@ -153,6 +153,24 @@ a {
   .container .wrap header.open .menu-wrap {
     display: inline-block;
   }
+  .container .wrap article section {
+    position: relative;
+  }
+  .container .wrap article section.visual:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 0.26666667vw;
+    height: 100%;
+    background-color: #fff;
+    margin-left: -0.26666667vw;
+    opacity: 0.5;
+    z-index: 1;
+  }
   .container .wrap article section.visual .swiper .swiper-slide {
     width: 100vw;
     height: 177.86666667vw;
@@ -171,21 +189,143 @@ a {
     transform: translate(-50%, -50%);
   }
   .container .wrap article section.visual .swiper .swiper-slide .txt {
-    font-size: 13.86666667vw;
-    color: #fff;
     text-align: left;
-    line-height: 12.8vw;
-    font-weight: 300;
     position: absolute;
     left: 4.8vw;
     bottom: 5.33333333vw;
     right: auto;
     top: auto;
+    width: 70.13333333vw;
+    height: 38.4vw;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p {
+    font-size: 13.86666667vw;
+    color: #fff;
+    height: 12.8vw;
+    line-height: 12.8vw;
+    font-weight: 300;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    overflow: hidden;
+    padding-top: 12.8vw;
+    box-sizing: border-box;
+    transition-delay: 1s;
+    transition: padding-top 1.5s;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p:nth-child(1) {
+    top: 0vw;
+    transition-delay: 1s;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p:nth-child(2) {
+    top: 12.8vw;
+    transition-delay: 1.2s;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p:nth-child(3) {
+    top: 25.6vw;
+    transition-delay: 1.4s;
   }
   .container .wrap article section.visual .swiper .swiper-slide.swiper-slide-active img,
   .container .wrap article section.visual .swiper .swiper-slide.swiper-slide-prev img {
     width: 100%;
     height: auto;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide.swiper-slide-active .txt .t-inner p {
+    padding-top: 0vw;
+  }
+  .container .wrap article section.top {
+    background-color: #e6e0d4;
+    height: 188.53333333vw;
+  }
+  .container .wrap article section.top:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 0.26666667vw;
+    height: 177.86666667vw;
+    background-color: #6a5121;
+    margin-left: -0.26666667vw;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .container .wrap article section.top:before {
+    content: '';
+    display: block;
+    width: 49.86666667vw;
+    height: 10.66666667vw;
+    background-color: #fff;
+    position: absolute;
+    left: 0vw;
+    bottom: 0vw;
+    right: auto;
+    top: auto;
+  }
+  .container .wrap article section.top .top-inner div {
+    position: absolute;
+    left: 4.8vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    overflow: hidden;
+  }
+  .container .wrap article section.top .top-inner div p {
+    font-size: 4.8vw;
+    color: #11161c;
+    line-height: 5.86666667vw;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .container .wrap article section.top .top-inner .t1 {
+    top: 5.33333333vw;
+    height: 11.73333333vw;
+  }
+  .container .wrap article section.top .top-inner .t1 p {
+    padding-top: 11.73333333vw;
+    box-sizing: border-box;
+  }
+  .container .wrap article section.top .top-inner .t2 {
+    left: 0vw;
+    top: 64vw;
+    right: auto;
+    bottom: auto;
+  }
+  .container .wrap article section.top .top-inner .t2 .t2-inner {
+    position: relative;
+    width: 100vw;
+    height: 27.73333333vw;
+    left: 0vw;
+  }
+  .container .wrap article section.top .top-inner .t2 .t2-inner p {
+    font-size: 13.86666667vw;
+    font-weight: 300;
+    line-height: 12.8vw;
+    display: block;
+    white-space: nowrap;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+  }
+  .container .wrap article section.top .top-inner .t2 .t2-inner p s {
+    color: #ee2023;
+  }
+  .container .wrap article section.top .top-inner .t2 .t2-inner p:nth-child(1) {
+    margin-left: 100%;
+  }
+  .container .wrap article section.top .top-inner .t2 .t2-inner p:nth-child(2) {
+    top: 14.93333333vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
