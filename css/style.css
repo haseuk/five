@@ -1,0 +1,191 @@
+/*--------------------------------------------------------------------------------------------------------------
+*  Template
+*--------------------------------------------------------------------------------------------------------------*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_cJD7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm45xW4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v18/JTURjIg1_i6t8kCHKm45_ZpC7g4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v24/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkBgv18E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+.mont {
+  font-family: Montserrat, sans-serif;
+}
+.pret {
+  font-family: Pretendard, sans-serif;
+}
+a {
+  display: inline-block;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-family: Montserrat, sans-serif;
+  }
+  .web {
+    display: none;
+  }
+  .mo {
+    display: inline-block;
+  }
+  .container .wrap {
+    font-size: 0vw;
+  }
+  .container .wrap header {
+    width: 100vw;
+    height: 16vw;
+    line-height: 16vw;
+    position: fixed;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    padding-top: 2.66666667vw;
+    padding-right: 4.8vw;
+    padding-bottom: 2.66666667vw;
+    padding-left: 4.8vw;
+    box-sizing: border-box;
+    z-index: 10;
+    zoom: 1;
+  }
+  .container .wrap header:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .container .wrap header h1 {
+    display: inline-block;
+  }
+  .container .wrap header h1 a {
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/logo.png');
+    background-size: contain;
+    width: 38.4vw;
+    height: 7.73333333vw;
+  }
+  .container .wrap header nav {
+    width: 10.66666667vw;
+    height: 10.66666667vw;
+    display: inline-block;
+    float: right;
+  }
+  .container .wrap header nav .menu {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/btn-menu.png');
+    background-size: contain;
+  }
+  .container .wrap header .menu-wrap {
+    width: 100%;
+    position: absolute;
+    left: 0vw;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    margin-top: -38.93333333vw;
+    display: none;
+  }
+  .container .wrap header .menu-wrap .menu-list {
+    text-align: center;
+  }
+  .container .wrap header .menu-wrap .menu-list a {
+    font-size: 8.53333333vw;
+    color: #fff;
+    display: block;
+    line-height: 10.4vw;
+    margin-bottom: 6.4vw;
+    font-weight: 300;
+  }
+  .container .wrap header .menu-wrap .menu-list a:last-child {
+    margin-bottom: 0vw;
+  }
+  .container .wrap header.open {
+    background-color: #8e2626;
+    height: 100vh;
+    line-height: normal;
+  }
+  .container .wrap header.open h1 a {
+    background-image: url('../img/mo/logo-w.png');
+  }
+  .container .wrap header.open nav .menu {
+    background-image: url('../img/mo/btn-close.png');
+  }
+  .container .wrap header.open .menu-wrap {
+    display: inline-block;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide {
+    width: 100vw;
+    height: 177.86666667vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide img {
+    width: 110%;
+    height: 105%;
+    transition: all 2s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+  .container .wrap article section.visual .swiper .swiper-slide .txt {
+    font-size: 13.86666667vw;
+    color: #fff;
+    text-align: left;
+    line-height: 12.8vw;
+    font-weight: 300;
+    position: absolute;
+    left: 4.8vw;
+    bottom: 5.33333333vw;
+    right: auto;
+    top: auto;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide.swiper-slide-active img,
+  .container .wrap article section.visual .swiper .swiper-slide.swiper-slide-prev img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */

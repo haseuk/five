@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DESIGN GROUP FIVE</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="wrap">
+      <header>
+        <h1><a href="/">design group five</a></h1>
+        <nav>
+          <a class="menu"></a>
+        </nav>
+        <div class="menu-wrap">
+          <div class="menu-list">
+            <a href="">Our Values</a>
+            <a href="">Our Services</a>
+            <a href="">Projects</a>
+            <a href="">How We Work</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+      </header>
+
+      <article>
+        <section class="visual">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/mo/visual-1.png" alt="" class="mo">
+                <div class="txt">
+                  <p>WE MAKE</p>
+                  <p>SOLID</p>
+                  <p>VALUES</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mo/visual-2.png" alt="" class="mo">
+                <div class="txt">
+                  <p>WE MAKE</p>
+                  <p>SOLID</p>
+                  <p>VALUES</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mo/visual-3.png" alt="" class="mo">
+                <div class="txt">
+                  <p>WE MAKE</p>
+                  <p>SOLID</p>
+                  <p>VALUES</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      speed: 1000,
+      effect: 'fade',
+      // autoplay: true,
+      loop: true,
+    });
+  </script>
+
+  <script>
+    let header = document.querySelector('header');
+    let menuBtn = document.querySelector('.menu');
+
+    menuBtn.addEventListener('click', function(){
+      if(header.className !== 'open') {
+        header.classList.add('open');
+      } else {
+        header.classList.remove('open');
+      }
+    })
+
+  </script>
+</body>
+</html>
