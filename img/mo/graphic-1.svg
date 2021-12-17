@@ -1,0 +1,60 @@
+<svg width="375" height="242" viewBox="0 0 375 242" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(18 1)">
+            <circle stroke="#FFF" cx="50" cy="50" r="50"/>
+            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
+                        <tspan x="23.107" y="54">사용자 분석</tspan>
+                    </text>
+        </g>
+        <g transform="translate(138 1)">
+            <circle stroke="#FFF" cx="50" cy="50" r="50"/>
+            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
+                        <tspan x="15.098" y="54">현황(시장)조사</tspan>
+                    </text>
+        </g>
+        <g transform="translate(258 1)">
+            <circle stroke="#FFF" cx="50" cy="50" r="50"/>
+            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
+                        <tspan x="29.258" y="54">상품설계</tspan>
+                    </text>
+        </g>
+        <g transform="translate(18 141)">
+            <circle stroke="#FFF" cx="50" cy="50" r="50"/>
+            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
+                        <tspan x="29.258" y="54">개발계획</tspan>
+                    </text>
+        </g>
+        <g transform="translate(138 141)">
+            <circle stroke="#FFF" cx="50" cy="50" r="50"/>
+            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
+                        <tspan x="31.592" y="46">Design</tspan>
+                        <tspan x="28.293" y="62">전략 수립</tspan>
+                    </text>
+        </g>
+        <g transform="translate(258 141)">
+            <circle stroke="#FFF" cx="50" cy="50" r="50"/>
+            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
+                        <tspan x="29.258" y="54">운영계획</tspan>
+                    </text>
+        </g>
+        <g fill="#FFF">
+            <g transform="translate(118 49)">
+                <path d="M0 1.5h20v1H0z"/>
+                <circle cx="20" cy="2" r="2"/>
+            </g>
+            <g transform="translate(238 49)">
+                <path d="M0 1.5h20v1H0z"/>
+                <circle cx="20" cy="2" r="2"/>
+            </g>
+            <path d="M358 50.5h17v1h-17zM0 191h18v1H0z"/>
+            <g transform="translate(118 189)">
+                <path d="M0 1.5h20v1H0z"/>
+                <circle cx="20" cy="2" r="2"/>
+            </g>
+            <g transform="translate(238 189)">
+                <path d="M0 1.5h20v1H0z"/>
+                <circle cx="20" cy="2" r="2"/>
+            </g>
+        </g>
+    </g>
+</svg>
