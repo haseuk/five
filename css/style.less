@@ -80,16 +80,28 @@ a { .ib; .pointer; }
               div { .abs; .lt(18,0); overflow: hidden;
                 p { .fs(18); color:#11161c; .lh(22); .medium; text-transform: uppercase; }
               }
-              .t1 { .t(20); .h(44);
-                p { .pt(44); .-box; }
+              .t1, .t3 { .t(20); .h(44);
+                p { .pt(44); .-box; transition-delay: 0.8s; transition: padding-top 1s; }
               }
               .t2 { .lt(0,240);
                 .t2-inner { .rel; .wh(375,104); .l(0);
-                  p { .fs(52); .light; .lh(48); .block; .nowrap; .abs; .lt;
+                  p { .fs(52); .light; .lh(48); .block; .nowrap; .abs; .lt; transition-delay: 1.8s; transition: margin-left 2s;
                     s { color:#ee2023; }
                     &:nth-child(1) { .ml(100%); }
-                    &:nth-child(2) { .t(56); }
+                    &:nth-child(2) { .t(56); .ml(-200%); }
                   }
+                }
+              }
+              .t3 { .t(360);
+                p { transition-delay: 2.8s; transition: padding-top 1s; }
+              }
+            }
+            &.active {
+              .top-inner {
+                .t1 p, .t3 p { .pt(0); }
+                .t2 .t2-inner p {
+                  &:nth-child(1) { .ml(-85%); }
+                  &:nth-child(2) { .ml(5%); }
                 }
               }
             }
