@@ -181,6 +181,50 @@
             </div>
           </div>
         </section>
+
+        <section class="projects">
+          <h2>projects</h2>
+          <div class="swiper proj-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/mo/proj-1.png" alt="">
+                <p class="en-name">
+                  CBNUH Osong<br>
+                  Bio Medical<br>
+                  Research Center
+                </p>
+                <p class="kr-name">오송의생명연구관</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mo/proj-2.png" alt="">
+                <p class="en-name">
+                  CNUHH<br>
+                  Innovation Medical<br>
+                  Research Center
+                </p>
+                <p class="kr-name">화순전남대학교병원<br> 개방형의료혁신센터</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mo/proj-3.png" alt="">
+                <p class="en-name">
+                  Ilgwang Light, water,<br>
+                  and dream education<br>
+                  happiness town
+                </p>
+                <p class="kr-name">일광 빛·물·꿈<br> 교육행복타운 </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="img/mo/proj-3.png" alt="">
+                <p class="en-name">
+                  Ilgwang Light, water,<br>
+                  and dream education<br>
+                  happiness town
+                </p>
+                <p class="kr-name">일광 빛·물·꿈<br> 교육행복타운 </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </article>
 
       <div class="popup">
@@ -264,10 +308,10 @@
       slidesPerView:1.2,
       speed:1000,
       spaceBetween:0,
-      autoplay: {
-        delay: 800,
-        stopOnLastSlide: true
-      },
+      // autoplay: {
+      //   delay: 800,
+      //   stopOnLastSlide: true
+      // },
     });
     const popSwiper = new Swiper('.swiper.pop-swiper', {
       autoHeight: true,
@@ -317,18 +361,19 @@
     window.addEventListener('scroll', function() {
       let topTop = topEl.getBoundingClientRect().top;
       let valTop = values.getBoundingClientRect().top;
+      console.log(valTop)
       if(topTop < 300) {
         topEl.classList.add('active');
       } else {
         topEl.classList.remove('active');
       }
-      if(valTop <= 150 && pageChange === 0) {
+      if(valTop <= 220 && pageChange === 0) {
         swiper2.autoplay.start();
         pageChange = 1;
       }
     });
 
-    let details = document.querySelectorAll('.detail');
+    let details = document.querySelectorAll('.detail'); 
     let popup = document.querySelector('.popup')
     Array.prototype.forEach.call(details, function(e, idx) {
       e.addEventListener('click', function() {
