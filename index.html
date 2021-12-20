@@ -7,6 +7,8 @@
   <title>DESIGN GROUP FIVE</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-t.css">
+  <link rel="stylesheet" href="css/style-pc.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -14,16 +16,16 @@
     <div class="wrap">
       <header>
         <h1><a href="/">design group five</a></h1>
-        <nav>
+        <nav class="mo">
           <a class="menu"></a>
         </nav>
         <div class="menu-wrap">
           <div class="menu-list">
-            <a href="">Our Values</a>
-            <a href="">Our Services</a>
-            <a href="">Projects</a>
-            <a href="">How We Work</a>
-            <a href="">Contact</a>
+            <a href="#values">Our Values</a>
+            <a href="#services">Our Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#work">How We Work</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </header>
@@ -34,31 +36,46 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="img/mo/visual-1.png" alt="" class="mo">
+                <img src="img/pc/visual-1.png" alt="" class="web">
                 <div class="txt">
-                  <div class="t-inner">
+                  <div class="t-inner mo">
                     <p>WE MAKE</p>
                     <p>SOLID</p>
                     <p>VALUES</p>
+                  </div>
+                  <div class="t-inner web">
+                    <p>WE MAKE</p>
+                    <p>SOLID VALUES</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="img/mo/visual-2.png" alt="" class="mo">
+                <img src="img/pc/visual-2.png" alt="" class="web">
                 <div class="txt">
-                  <div class="t-inner">
+                  <div class="t-inner mo">
                     <p>WE MAKE</p>
                     <p>SOLID</p>
                     <p>VALUES</p>
+                  </div>
+                  <div class="t-inner web">
+                    <p>WE MAKE</p>
+                    <p>SOLID VALUES</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="img/mo/visual-3.png" alt="" class="mo">
+                <img src="img/pc/visual-3.png" alt="" class="web">
                 <div class="txt">
-                  <div class="t-inner">
+                  <div class="t-inner mo">
                     <p>WE MAKE</p>
                     <p>SOLID</p>
                     <p>VALUES</p>
+                  </div>
+                  <div class="t-inner web">
+                    <p>WE MAKE</p>
+                    <p>SOLID VALUES</p>
                   </div>
                 </div>
               </div>
@@ -83,15 +100,19 @@
             <div class="t4">
               <p>WITH THE DESIGN GROUP FIVE,<br> DISCOVER THE FUTURE</p>
             </div>
+            <div class="scroll-down web">
+              <img src="img/pc/icon-arrow-scroll-down.svg" alt="">
+            </div>
           </div>
         </section>
 
-        <section class="values">
+        <section class="values" id="values">
           <h2>OUR VALUES</h2>
           <div class="swiper swiper2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/mo/val-1.png" alt="">
+                <img src="img/mo/val-1.png" alt="" class="mo">
+                <img src="img/pc/val-1.png" alt="" class="web">
                 <p class="num">01</p>
                 <div class="t-wrap">
                   <p class="tit">RESPECT</p>
@@ -103,7 +124,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/mo/val-2.png" alt="">
+                <img src="img/mo/val-2.png" alt="" class="mo">
+                <img src="img/pc/val-2.png" alt="" class="web">
                 <p class="num">02</p>
                 <div class="t-wrap">
                   <p class="tit">BALANCE</p>
@@ -116,7 +138,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/mo/val-3.png" alt="">
+                <img src="img/mo/val-3.png" alt="" class="mo">
+                <img src="img/pc/val-3.png" alt="" class="web">
                 <p class="num">03</p>
                 <div class="t-wrap">
                   <p class="tit">CHALLENGE</p>
@@ -129,7 +152,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/mo/val-4.png" alt="">
+                <img src="img/mo/val-4.png" alt="" class="mo">
+                <img src="img/pc/val-4.png" alt="" class="web">
                 <p class="num">04</p>
                 <div class="t-wrap">
                   <p class="tit">GROWTH</p>
@@ -143,7 +167,8 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/mo/val-5.png" alt="">
+                <img src="img/mo/val-5.png" alt="" class="mo">
+                <img src="img/pc/val-5.png" alt="" class="web">
                 <p class="num">05</p>
                 <div class="t-wrap">
                   <p class="tit">FOCUS</p>
@@ -158,134 +183,334 @@
           </div>
         </section>
 
-        <section class="services active">
+        <section class="services" id="services">
           <h2>OUR SERVICES</h2>
           <div class="ser-wrap">
             <div class="cell">
-              <img src="img/mo/ser-1.png" alt="">
+              <img src="img/mo/ser-1.png" alt="" class="mo">
+              <img src="img/pc/ser-1.png" alt="" class="web">
               <p class="sub-tit">기획 솔루션</p>
               <p class="txt">creative<br> solution</p>
-              <a class="detail"><img src="img/mo/btn-detail.svg" alt=""></a>
+              <span class="kr-txt web">‘최적의 사업 목적 달성’ 을 위해<br> 입체적인 방법을 제시합니다.</span>
+              <a class="detail"></a>
             </div>
             <div class="cell">
-              <img src="img/mo/ser-2.png" alt="">
+              <img src="img/mo/ser-2.png" alt="" class="mo">
+              <img src="img/pc/ser-2.png" alt="" class="web">
               <p class="sub-tit">건축 솔루션</p>
               <p class="txt">architectural<br> solution</p>
-              <a class="detail"><img src="img/mo/btn-detail.svg" alt=""></a>
+              <span class="kr-txt web">진정성 있는 고찰을 통해<br> ‘공간의 내재된 가치’ 를 발견합니다.</span>
+              <a class="detail"></a>
             </div>
             <div class="cell">
-              <img src="img/mo/ser-3.png" alt="">
+              <img src="img/mo/ser-3.png" alt="" class="mo">
+              <img src="img/pc/ser-3.png" alt="" class="web">
               <p class="sub-tit">개발운영 솔루션</p>
               <p class="txt">Development<br> operation<br> solution</p>
-              <a class="detail"><img src="img/mo/btn-detail.png" alt=""></a>
+              <span class="kr-txt web">‘지속가능한 가치 창출’ 을 위한<br> 상생을 고민합니다.</span>
+              <a class="detail"></a>
             </div>
           </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
           <h2>projects</h2>
           <div class="swiper proj-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/mo/proj-1.png" alt="">
+                <div class="s-inner">
+                  <div class="dim"></div>
+                  <img src="img/mo/proj-1.png" alt="" class="mo">
+                  <img src="img/pc/proj-1.png" alt="" class="web">
+                </div>
                 <p class="en-name">
                   CBNUH Osong<br>
                   Bio Medical<br>
                   Research Center
                 </p>
                 <p class="kr-name">오송의생명연구관</p>
+                <div class="view-proj">
+                  <a href="" class="view-btn">View Project</a>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/mo/proj-2.png" alt="">
+                <div class="s-inner">
+                  <div class="dim"></div>
+                  <img src="img/mo/proj-2.png" alt="" class="mo">
+                  <img src="img/pc/proj-2.png" alt="" class="web">
+                </div>
                 <p class="en-name">
                   CNUHH<br>
                   Innovation Medical<br>
                   Research Center
                 </p>
                 <p class="kr-name">화순전남대학교병원<br> 개방형의료혁신센터</p>
+                <div class="view-proj">
+                  <a href="" class="view-btn">View Project</a>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/mo/proj-3.png" alt="">
+                <div class="s-inner">
+                  <div class="dim"></div>
+                  <img src="img/mo/proj-3.png" alt="" class="mo">
+                  <img src="img/pc/proj-3.png" alt="" class="web">
+                </div>
                 <p class="en-name">
                   Ilgwang Light, water,<br>
                   and dream education<br>
                   happiness town
                 </p>
                 <p class="kr-name">일광 빛·물·꿈<br> 교육행복타운 </p>
+                <div class="view-proj">
+                  <a href="" class="view-btn">View Project</a>
+                </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/mo/proj-3.png" alt="">
+                <div class="s-inner">
+                  <div class="dim"></div>
+                  <img src="img/mo/proj-4.png" alt="" class="mo">
+                  <img src="img/pc/proj-4.png" alt="" class="web">
+                </div>
                 <p class="en-name">
                   Ilgwang Light, water,<br>
                   and dream education<br>
                   happiness town
                 </p>
                 <p class="kr-name">일광 빛·물·꿈<br> 교육행복타운 </p>
+                <div class="view-proj">
+                  <a href="" class="view-btn">View Project</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="s-inner">
+                  <div class="dim"></div>
+                  <img src="img/mo/proj-5.png" alt="" class="mo">
+                  <img src="img/pc/proj-5.png" alt="" class="web">
+                </div>
+                <p class="en-name">
+                  Korea Brain Research<br>
+                  Institute Phase - 2
+                </p>
+                <p class="kr-name">한국뇌연구원<br> 2단계</p>
+                <div class="view-proj">
+                  <a href="" class="view-btn">View Project</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="s-inner">
+                  <div class="dim"></div>
+                  <img src="img/mo/proj-6.png" alt="" class="mo">
+                  <img src="img/pc/proj-6.png" alt="" class="web">
+                </div>
+                <p class="en-name">
+                  Korea Brain Research<br>
+                  Institute Phase - 3
+                </p>
+                <p class="kr-name">한국뇌연구원<br> 3단계</p>
+                <div class="view-proj">
+                  <a href="" class="view-btn">View Project</a>
+                </div>
               </div>
             </div>
           </div>
+          <div class="swiper-button swiper-button-prev web"></div>
+          <div class="swiper-button swiper-button-next web"></div>
+        </section>
+
+        <section class="work" id="work">
+          <h2>HOW<br class="mo"> WE WORK</h2>
+          <div class="cell">
+            <div class="img-wrap">
+              <img src="img/mo/work-1.png" alt="" class="mo">
+              <img src="img/pc/work-1.png" alt="" class="web">
+              <p>Draw your<br> life</p>
+            </div>
+            <div class="t-wrap">
+              <p class="tit">당신의 삶을 그려라</p>
+              <p class="txt">
+                삶과 일의 균형으로 각자가 추구하는 삶을 그릴 수 있는<br class="mo">
+                곳입니다.<br class="web"> 균형적인 삶을 살아가며 미래를 향한 원동력을<br class="mo">
+                얻을 수 있을 것입니다.
+              </p>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="img-wrap">
+              <img src="img/mo/work-2.png" alt="" class="mo">
+              <img src="img/pc/work-2.png" alt="" class="web">
+              <p>Find Your<br> Potential</p>
+            </div>
+            <div class="t-wrap">
+              <p class="tit">당신의 잠재력을 발견하라</p>
+              <p class="txt">
+                자기 개발이 이루질 수 있는 업무 환경으로 당신의<br class="mo">
+                잠재력을<br class="web"> 성장시켜 나가는 곳입니다. 이곳에서 당신은<br class="mo">
+                한층 성장된 자신을<br class="web"> 발견할 수 있을 것입니다.
+              </p>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="img-wrap">
+              <img src="img/mo/work-3.png" alt="" class="mo">
+              <img src="img/pc/work-3.png" alt="" class="web">
+              <p>Share our<br> goal</p>
+            </div>
+            <div class="t-wrap">
+              <p class="tit">우리의 목표를 공유하다</p>
+              <p class="txt">
+                목표를 달성하고 지표를 공유하여 함께 회사를<br class="mo">
+                발전시켜<br class="web"> 나가는 곳입니다. 함께하며 성장과 발전을<br class="mo">
+                위해 주도적으로<br class="web"> 이끌 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="recruit" id="contact">
+          <header>
+            <h1><a href="/">design group five</a></h1>
+            <nav>
+              <a class="menu"></a>
+            </nav>
+            <div class="menu-wrap">
+              <div class="menu-list">
+                <a href="#values">Our Values</a>
+                <a href="#services">Our Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#work">How We Work</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </header>
+          <h3>This is DG 5.<br> Want to<br class="mo"> work<br class="web"> with<br class="mo"> us?</h3>
+          <p class="txt">디자인 그룹 파이브와 함께 일하고 싶으신가요?</p>
+          <a class="recruit-btn"></a>
+          <div class="chats">
+            <div class="c-wrap c-wrap1"><p>종합검진 제공</p></div>
+            <div class="c-wrap c-wrap2"><p>직원 자기개발을 위한 복지비용 지급</p></div>
+            <div class="c-wrap c-wrap3"><p>경조 휴가 및 경조금 지급</p></div>
+            <div class="c-wrap c-wrap4"><p>법인 콘도이용</p></div>
+            <div class="c-wrap c-wrap5"><p>탄력근무제 시행</p></div>
+          </div>
+          <div class="btm">
+            <svg class="mo" id="btm" width="162" height="5" viewBox="0 0 162 5" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 4C56.502-.429 105.055.902 161 2.583" stroke="#FAFAFA" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round"/>
+            </svg>
+            <svg class="web" id="web-btm" width="431" height="12" viewBox="0 0 431 12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 10C150.121-1.81 279.696 1.738 429 6.22" stroke="#FAFAFA" stroke-width="2.5" fill="none" fill-rule="evenodd" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="arrow">
+            <svg class="mo" id="arrow" width="104" height="101" viewBox="0 0 104 101" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="#FAFAFA" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                <path d="M6.401 25.794C10.414 37.47 18.665 47.339 28.52 54.612c8.83 6.517 21.73 13.783 33.078 13.171.97-.052 1.935-.17 2.886-.363 6.768-1.374 12.137-7.422 9.896-14.532-1.402-4.448-7.715-13.153-13.291-9.508-2.386 1.56-2.532 4.764-2 7.302.653 3.106 2.575 5.841 4.512 8.287 7.855 9.916 26.197 12.938 37.805 11.488"/>
+                <path d="M97.408 73.62a72.505 72.505 0 0 1 4.603-3.145 29.276 29.276 0 0 0-5.006-2.604" stroke-linejoin="round"/>
+              </g>
+            </svg>
+            <svg class="web" id="web-arrow" width="391" height="378" viewBox="0 0 391 378" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="#FAFAFA" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                <path d="M19.135 93.728c15.47 45.042 47.29 83.097 85.296 111.146 34.055 25.133 83.81 53.15 127.579 50.784a76.824 76.824 0 0 0 11.133-1.4c26.107-5.305 46.816-28.636 38.178-56.06-5.404-17.154-29.752-50.729-51.26-36.666-9.203 6.019-9.768 18.375-7.715 28.165 2.513 11.98 9.924 22.531 17.396 31.963 30.293 38.243 101.035 49.888 145.812 44.288" stroke-width="2.5"/>
+                <path d="M370.13 278.154a279.775 279.775 0 0 1 17.756-12.136 112.88 112.88 0 0 0-19.307-10.042" stroke-width="3" stroke-linejoin="round"/>
+              </g>
+            </svg>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="cell">
+            <p class="tit">SOCIAL</p>
+            <a href="">naver Blog <span></span></a>
+            <a href="">instagram <span></span></a>
+            <a href="">TWITTER <span></span></a>
+          </div>
+          <div class="cell">
+            <p class="tit">CONTACT</p>
+            <a href="tel:02-6954-0555" class="tel"><s>Tel.</s> +82.2.6954.0555</a>
+            <p class="fax"><s>Fax.</s> +82.2.6941.0555</p>
+          </div>
+          <div class="cell">
+            <p class="tit">Location</p>
+            <p class="txt">
+              서울특별시 송파구 법원로<br class="mo">
+              11길 7<br class="web"> 문정현대지식산업센터<br class="mo">
+              1-2 C동 916호
+            </p>
+          </div>
+          <p class="copy">© 2021 Design Group 5<br class="mo"> All Rights Reserved</p>
         </section>
       </article>
 
       <div class="popup">
         <div class="holder">
-
           <div class="pop-inner">
             <div class="swiper pop-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <h3>creative<br> solution</h3>
-                  <p class="tit">솔루션 사전 기획 업무</p>
-                  <p class="sub-tit">최적의 사업 목적 달성을 위해 입체적인<br> 방법을 제시합니다.</p>
-                  <p class="txt">
-                    바이오&헬스케어 시설 뿐만 아니라 주거시설, 일반시설,<br>
-                    공공시설, 수익시설을 비롯한 복합개발 등 다양한 설계 경험을<br>
-                    바탕으로 축적된 데이터를 활용해 사업 전략을 수립하고,<br>
-                    최적의 디자인 서비스를 제공하며, 개발 운영 계획을<br>
-                    수립합니다.
-                  </p>
-                  <img src="img/mo/graphic-1.svg" alt="" class="g1">
+                  <div class="t-wrap">
+                    <p class="tit">솔루션 사전 기획 업무</p>
+                    <p class="sub-tit">최적의 사업 목적 달성을 위해 입체적인<br class="mo"> 방법을 제시합니다.</p>
+                    <p class="txt">
+                      바이오&헬스케어 시설 뿐만 아니라 주거시설, 일반시설,<br class="mo">
+                      공공시설, 수익시설을 비롯한<br class="web"> 복합개발 등 다양한 설계 경험을<br class="mo">
+                      바탕으로 축적된 데이터를 활용해 사업 전략을 수립하고,<br>
+                      최적의 디자인 서비스를 제공하며, 개발 운영 계획을<br class="mo">
+                      수립합니다.
+                    </p>
+                  </div>
+                  <img src="img/mo/graphic-1.svg" alt="" class="g1 mo">
+                  <img src="img/pc/graphic-1.svg" alt="" class="g1 web">
                   <span>*축적된 D/B 활용</span>
                 </div>
                 <div class="swiper-slide">
                   <h3>Architectural<br> Solution</h3>
-                  <p class="tit">계획 업무</p>
-                  <p class="sub-tit">진정성 있는 고찰을 통해 공간의 내재된<br> 가치를 발견합니다.</p>
-                  <p class="txt">
-                    다양한 분야, 경험으로 이루어진 전문화된 인력과 D/B를<br>
-                    구축하고 있습니다. 이를 통해 사업의 결과물을 간결하고<br>
-                    정확한 언어로 구현하여 공간 구축의 효율성을 높입니다.
-                  </p>
-                  <img src="img/mo/graphic-2.svg" alt="" class="g2">
-                  <p class="sub-tit">Best Solution</p>
-                  <ul>
-                    <li>
-                      <p class="tit">Architect</p>
-                      <p class="txt">전문적인<br> 기술&경험</p>
-                    </li>
-                    <li>
-                      <p class="tit">Client</p>
-                      <p class="txt">요구사항&<br> 프로젝트 목표</p>
-                    </li>
-                    <li>
-                      <p class="tit">Engineer</p>
-                      <p class="txt">친환경<br> 계획& 컨설팅</p>
-                    </li>
-                  </ul>
+                  <div class="t-wrap">
+                    <p class="tit">계획 업무</p>
+                    <p class="sub-tit">진정성 있는 고찰을 통해 공간의 내재된<br class="mo"> 가치를 발견합니다.</p>
+                    <p class="txt">
+                      다양한 분야, 경험으로 이루어진 전문화된 인력과 D/B를<br class="mo">
+                      구축하고 있습니다.<br class="web"> 이를 통해 사업의 결과물을 간결하고<br class="mo">
+                      정확한 언어로 구현하여 공간 구축의 효율성을 높입니다.
+                    </p>
+                  </div>
+                  <img src="img/mo/graphic-2.svg" alt="" class="g2 mo">
+                  <img src="img/pc/graphic-2.svg" alt="" class="g2 web">
+                  <div class="best">
+                    <p class="sub-tit">Best Solution</p>
+                    <ul>
+                      <li>
+                        <p class="tit">Architect</p>
+                        <p class="txt">전문적인<br class="mo"> 기술&경험</p>
+                      </li>
+                      <li>
+                        <p class="tit">Client</p>
+                        <p class="txt">요구사항&<br class="mo"> 프로젝트 목표</p>
+                      </li>
+                      <li>
+                        <p class="tit">Engineer</p>
+                        <p class="txt">친환경<br class="mo"> 계획& 컨설팅</p>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
                 <div class="swiper-slide">
                   <h3>Development<br> operating<br> Solution</h3>
-                  <p class="tit">기획 및 개발 업무</p>
-                  <p class="sub-tit">지속가능한 가치 창출을 위한 상생을 고민합니다.</p>
-                  <p class="txt">
-                    고객의 Needs를 달성하기 위한 최적의 전략을 수립하여<br>
-                    개발 서비스, 공동 투자개발, 마케팅 서비스 등 다양한 채널을<br>
-                    통한 최적화된 서비스를 제공합니다.
-                  </p>
-                  <img src="img/mo/graphic-3.svg" alt="" class="g3">
+                  <div class="t-wrap">
+                    <p class="tit">기획 및 개발 업무</p>
+                    <p class="sub-tit">지속가능한 가치 창출을 위한 상생을 고민합니다.</p>
+                    <p class="txt">
+                      고객의 Needs를 달성하기 위한 최적의 전략을 수립하여<br class="mo">
+                      개발 서비스, 공동 투자개발,<br class="web"> 마케팅 서비스 등 다양한 채널을<br class="mo">
+                      통한 최적화된 서비스를 제공합니다.
+                    </p>
+                  </div>
+                  <img src="img/mo/graphic-3.svg" alt="" class="g3 mo">
+                  <img src="img/pc/graphic-3.svg" alt="" class="g3 web">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
+              <div class="swiper-button swiper-button-prev web"></div>
+              <div class="swiper-button swiper-button-next web"></div>
             </div>
             <a class="pop-close"><img src="img/mo/pop-close.svg" alt=""></a>
           </div>
@@ -295,91 +520,225 @@
   </div>
 
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.0/vivus.js" integrity="sha512-Tz113urJePvCMdko0ky9901mnHMcWLUKv7/QhbGGdWIkgv/wGPMz7gM7hr5jzS8mtv0dS/u6cYyqAO5hPlJ6ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     new Swiper('.swiper.swiper1', {
       speed: 1000,
       effect: 'fade',
       autoplay: {
         delay: 5000,
+        disableOnInteraction:false,
       },
       loop: true,
     });
     const swiper2 = new Swiper('.swiper.swiper2', {
       slidesPerView:1.2,
-      speed:1000,
+      speed:500,
       spaceBetween:0,
       // autoplay: {
       //   delay: 800,
       //   stopOnLastSlide: true
       // },
+      breakpoints: {
+        769: {
+          slidesPerView:3,
+          slidesPerGroup: 3,
+          loopPreventsSlide: false
+        }
+      }
     });
     const popSwiper = new Swiper('.swiper.pop-swiper', {
       autoHeight: true,
       pagination: {
         el: ".swiper-pagination",
       },
+      breakpoints: {
+        769: {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        }
+      }
     });
-
-
-    swiper2.on('slideChange', function() {
-      if(swiper2.realIndex === 4) {
-        swiper2.autoplay.stop();
-        setTimeout(function() {
-          pageServiceMove();
-        },1200)
+    new Swiper('.swiper.proj-swiper', {
+      speed: 800,
+      slidesPerView:1.05,
+      // autoplay: {
+      //   delay: 1500,
+      //   disableOnInteraction:false,
+      // },
+      loop: true,
+      breakpoints: {
+        769: {
+          slidesPerView:1.7,
+          spaceBetween:210,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        }
       }
     });
 
+    let wi = window.innerWidth;
+    if(wi > 769) {
+      swiper2.on('slideChange', function() {
+        if(swiper2.realIndex === 2) {
+          swiper2.autoplay.stop();
+          setTimeout(function() {
+            pageServiceMove();
+          },1000)
+        }
+      });
+    } else {
+      swiper2.on('slideChange', function() {
+        if(swiper2.realIndex === 4) {
+          swiper2.autoplay.stop();
+          setTimeout(function() {
+            pageServiceMove();
+          },1000)
+        }
+      });
+    }
 
+    let visual = document.querySelector('.visual');
+    let topEl = document.querySelector('.top');
+    let values = document.querySelector('.values');
     let services = document.querySelector('.services');
+    let recruit = document.querySelector('.recruit');
+    let contact = document.querySelector('.contact');
+    let visH;
+    let topH;
+    let valH;
+    let recH;
+    let conH;
+    setTimeout(function() {
+      visH = visual.getBoundingClientRect().height;
+      topH = topEl.getBoundingClientRect().height;
+      valH = values.getBoundingClientRect().height;
+      recH = recruit.getBoundingClientRect().height;
+      conH = contact.getBoundingClientRect().height;
+      console.log(visH,topH,valH,recH,conH)
+    },500)
 
-    let serTop = services.getBoundingClientRect().top;
-    let scTop = window.scrollY || document.documentElement.scrollTop;
-    function pageServiceMove() {
-      window.scrollTo({ left:0, top:serTop+scTop, behavior: 'smooth'});
+    let pageH = document.documentElement.scrollHeight;
+    let winTop;
+    let visTop;
+    let topTop;
+    let valTop;
+    let serTop;
+    let recTop;
+
+    let serPage = 0;
+    let topPage = 0;
+    let valPage = 0;
+    let btm = 0;
+    window.addEventListener('scroll', function() {
+      winTop = window.scrollY;
+      visTop = visual.getBoundingClientRect().top;
+      topTop = topEl.getBoundingClientRect().top;
+      valTop = values.getBoundingClientRect().top;
+      serTop = services.getBoundingClientRect().top;
+      recTop = recruit.getBoundingClientRect().top;
+      if(topTop <= 300) {
+        topEl.classList.add('active');
+        setTimeout(function() {
+          pageValMove();
+        },3000);
+      }
+      if(valTop <= 300 && valPage === 0) {
+        swiper2.autoplay.start();
+        valPage = 1;
+      }
+      if(serTop <= 200) {
+        serPageActive();
+        serPage = 1;
+      }
+      // if(recTop <= 0 && (document.documentElement.scrollHeight - document.documentElement.scrollTop === document.documentElement.clientHeight) && btm === 0) {
+      if(recTop <= 30 && btm === 0) {
+        recruit.classList.add('active');
+        btmStart();
+        webBtmStart();
+        btm = 1;
+      }
+    });
+
+    function serPageActive() {
       services.classList.add('active');
+      serPage = 1;
+    }
+
+    function pageValMove() {
+      if(topPage === 0 && valPage === 0) {
+        window.scrollTo({ left:0, top:visH + topH, behavior: 'smooth'});
+      }
+      topPage = 1;
+    }
+
+    function pageServiceMove() {
+      if(serPage === 0) {
+        window.scrollTo({ left:0, top:visH + topH + valH, behavior: 'smooth'});
+        serPageActive();
+      }
     }
 
     let header = document.querySelector('header');
+    let header2 = document.querySelector('.recruit header');
     let menuBtn = document.querySelector('.menu');
+    let menuBtn2 = document.querySelector('.recruit .menu');
     let body = document.querySelector('body');
+
+    function bodyFix() {
+      body.style.overflow = 'hidden';
+    }
+    function bodyUnFix() {
+      body.style.overflow = '';
+    }
 
     menuBtn.addEventListener('click', function(){
       if(header.className !== 'open') {
-        header.classList.add('open');
-        body.style.position = 'fixed';
+        headerOpen();
       } else {
         header.classList.remove('open');
-        body.style.position = '';
+        headerClose();
       }
     });
 
-    let topEl = document.querySelector('.top');
-    let values = document.querySelector('.values');
-    let pageChange = 0;
-
-    window.addEventListener('scroll', function() {
-      let topTop = topEl.getBoundingClientRect().top;
-      let valTop = values.getBoundingClientRect().top;
-      console.log(valTop)
-      if(topTop < 300) {
-        topEl.classList.add('active');
+    menuBtn2.addEventListener('click', function(){
+      if(header2.className !== 'open') {
+        headerOpen();
+        window.scrollTo(0, pageH - (recH + conH))
       } else {
-        topEl.classList.remove('active');
-      }
-      if(valTop <= 220 && pageChange === 0) {
-        swiper2.autoplay.start();
-        pageChange = 1;
+        headerClose();
       }
     });
 
-    let details = document.querySelectorAll('.detail'); 
+    function headerOpen() {
+      header2.classList.add('open');
+      bodyFix();
+    }
+
+    function headerClose() {
+      header2.classList.remove('open');
+      bodyUnFix();
+    }
+
+    let menuList = document.querySelectorAll('.menu-list a');
+    Array.prototype.forEach.call(menuList, function(e) {
+      e.addEventListener('click', function() {
+        headerClose();
+      });
+    });
+
+    let details = document.querySelectorAll('.detail');
     let popup = document.querySelector('.popup')
     Array.prototype.forEach.call(details, function(e, idx) {
       e.addEventListener('click', function() {
         if(popup.className !== 'open') {
           popup.classList.add('open');
           popSwiper.slideTo(idx);
+          bodyFix();
         }
       })
     });
@@ -387,7 +746,28 @@
     let popClose = document.querySelector('.pop-close');
     popClose.addEventListener('click', function() {
       popup.classList.remove('open');
-    })
+      bodyUnFix();
+    });
+
+    function btmStart() {
+      new Vivus('btm', {duration:30});
+      setTimeout(function() {
+        arrowStart();
+      },300)
+    }
+    function webBtmStart() {
+      new Vivus('web-btm', {duration:30});
+      setTimeout(function() {
+        webArrowStart();
+      },300)
+    }
+    function arrowStart() {
+      new Vivus('arrow', {duration:50});
+    }
+    function webArrowStart() {
+      new Vivus('web-arrow', {duration:55});
+    }
+
   </script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+<svg width="130" height="56" viewBox="0 0 130 56" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <ellipse stroke="#FFF" fill-opacity=".7" fill="#FFF" cx="65" cy="28" rx="64.5" ry="27.5"/>
+        <text font-family="Montserrat-Medium, Montserrat" font-size="16" font-weight="400" fill="#000">
+            <tspan x="25" y="34">View Detail</tspan>
+        </text>
+    </g>
+</svg>

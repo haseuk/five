@@ -1,0 +1,8 @@
+<svg width="120" height="52" viewBox="0 0 120 52" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <ellipse stroke="#FFF" cx="60" cy="26" rx="59.5" ry="25.5"/>
+        <text font-family="Montserrat-Regular, Montserrat" font-size="14" fill="#FFF">
+            <tspan x="38" y="31">Recruit</tspan>
+        </text>
+    </g>
+</svg>

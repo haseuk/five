@@ -2,7 +2,7 @@
     <g fill="none" fill-rule="evenodd">
         <ellipse stroke="#FFF" cx="50" cy="20" rx="49.5" ry="19.5"/>
         <text font-family="Montserrat-Regular, Montserrat" font-size="12" fill="#FFF">
-                            <tspan x="16" y="25">View Detail</tspan>
-                        </text>
+            <tspan x="21" y="25">View Detail</tspan>
+        </text>
     </g>
 </svg>
