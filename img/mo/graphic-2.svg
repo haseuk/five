@@ -5,46 +5,13 @@
             <use xlink:href="#a"/>
         </mask>
     </defs>
-    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
-        <use stroke="#EEE" mask="url(#b)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#a"/>
-        <g transform="translate(110)">
-            <circle stroke="#EEE" fill="#8E2626" cx="50" cy="50" r="50"/>
-            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
-                        <tspan x="20.141" y="54">User 컨설팅</tspan>
-                    </text>
-        </g>
-        <g transform="translate(220 75)">
-            <circle stroke="#EEE" fill="#8E2626" cx="50" cy="50" r="50"/>
-            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
-                        <tspan x="29.258" y="46">전문화된</tspan>
-                        <tspan x="34.443" y="62">기술력</tspan>
-                    </text>
-        </g>
-        <g transform="translate(220 205)">
-            <circle stroke="#EEE" fill="#8E2626" cx="50" cy="50" r="50"/>
-            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
-                        <tspan x="19.256" y="54">건축 Design</tspan>
-                    </text>
-        </g>
-        <g transform="translate(106 280)">
-            <circle stroke="#EEE" fill="#8E2626" cx="50" cy="50" r="50"/>
-            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
-                        <tspan x="14.07" y="54">친환경 Design</tspan>
-                    </text>
-        </g>
-        <g transform="translate(0 205)">
-            <circle stroke="#EEE" fill="#8E2626" cx="50" cy="50" r="50"/>
-            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
-                        <tspan x="29.258" y="46">기술계획</tspan>
-                        <tspan x="34.443" y="62">컨설팅</tspan>
-                    </text>
-        </g>
-        <g transform="translate(0 75)">
-            <circle stroke="#EEE" fill="#8E2626" cx="50" cy="50" r="50"/>
-            <text font-family="Pretendard-Medium, Pretendard" font-size="12" font-weight="400" fill="#FFF">
-                        <tspan x="20.256" y="46">Pre-Design</tspan>
-                        <tspan x="30.533" y="62">Service</tspan>
-                    </text>
-        </g>
+    <g transform="translate(1 1)" stroke="#EEE" fill="none" fill-rule="evenodd">
+        <use mask="url(#b)" stroke-width="2" stroke-dasharray="4,8" xlink:href="#a"/>
+        <circle cx="50" cy="50" r="50" transform="translate(110)" fill="#8E2626"/>
+        <circle cx="50" cy="50" r="50" transform="translate(220 75)" fill="#8E2626"/>
+        <circle cx="50" cy="50" r="50" transform="translate(220 205)" fill="#8E2626"/>
+        <circle cx="50" cy="50" r="50" transform="translate(106 280)" fill="#8E2626"/>
+        <circle cx="50" cy="50" r="50" transform="translate(0 205)" fill="#8E2626"/>
+        <circle cx="50" cy="50" r="50" transform="translate(0 75)" fill="#8E2626"/>
     </g>
 </svg>

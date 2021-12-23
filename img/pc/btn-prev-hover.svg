@@ -1,11 +1,11 @@
 <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter color-interpolation-filters="auto" id="a">
-            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"/>
         </filter>
     </defs>
     <g fill="none" fill-rule="evenodd">
-        <circle stroke="#CCC" cx="30" cy="30" r="29.5"/>
+        <circle stroke="#CCC" fill-opacity=".7" fill="#FFF" cx="30" cy="30" r="29.5"/>
         <path d="M14 19h32v22H14z"/>
         <g filter="url(#a)" transform="translate(14 19)">
             <g fill="#FFF">

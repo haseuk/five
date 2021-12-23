@@ -1,13 +1,13 @@
 <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter color-interpolation-filters="auto" id="a">
-            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"/>
         </filter>
     </defs>
     <g fill="none" fill-rule="evenodd">
-        <circle stroke="#CCC" cx="30" cy="30" r="29.5"/>
-        <path d="M14 19h32v22H14z"/>
-        <g filter="url(#a)" transform="translate(14 19)">
+        <circle stroke="#CCC" fill-opacity=".7" fill="#FFF" cx="30" cy="30" r="29.5"/>
+        <path d="M46 19H14v22h32z"/>
+        <g filter="url(#a)" transform="matrix(-1 0 0 1 46 19)">
             <g fill="#FFF">
                 <path fill-rule="nonzero" d="M10.607 21.607 0 11 10.607.393l1.01 1.01L2.02 11l9.596 9.596z"/>
                 <path d="M32 10.286v1.5H2v-1.5z"/>

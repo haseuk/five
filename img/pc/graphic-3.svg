@@ -1,59 +1,16 @@
-<svg width="442" height="482" viewBox="0 0 442 482" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="482" height="482" viewBox="0 0 482 482" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-        <circle id="a" cx="220" cy="240" r="220"/>
+        <circle id="a" cx="240" cy="240" r="220"/>
         <mask id="b" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="440" height="440" fill="#fff">
             <use xlink:href="#a"/>
         </mask>
     </defs>
-    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
-        <use stroke="#EEE" mask="url(#b)" stroke-width="2" stroke-dasharray="4,4" xlink:href="#a"/>
-        <g transform="translate(280)">
-            <circle stroke="#EEE" fill="#8E2626" opacity=".9" cx="80" cy="80" r="80"/>
-            <text font-family="Pretendard-Bold, Pretendard" font-size="20" font-weight="bold" fill="#FFF">
-                            <tspan x="34.787" y="57">사업화전략</tspan>
-                        </text>
-            <text font-family="Pretendard-Regular, Pretendard" font-size="18" fill="#FFF">
-                            <tspan x="39.35" y="87">사업성 분석</tspan>
-                            <tspan x="31.571" y="113">개발방식 검토</tspan>
-                        </text>
-        </g>
-        <g transform="translate(280 320)">
-            <circle stroke="#EEE" fill="#8E2626" opacity=".9" cx="80" cy="80" r="80"/>
-            <text font-family="Pretendard-Bold, Pretendard" font-size="20" font-weight="bold" fill="#FFF">
-                            <tspan x="44.93" y="57">상품설계</tspan>
-                        </text>
-            <text font-family="Pretendard-Regular, Pretendard" font-size="18" fill="#FFF">
-                            <tspan x="30.571" y="87">상품컨셉 검토</tspan>
-                            <tspan x="30.571" y="113">특화전략 도출</tspan>
-                        </text>
-        </g>
-        <g transform="translate(0 320)">
-            <circle stroke="#EEE" fill="#8E2626" opacity=".9" cx="80" cy="80" r="80"/>
-            <text font-family="Pretendard-Bold, Pretendard" font-size="20" font-weight="bold" fill="#FFF">
-                            <tspan x="45.93" y="57">사업기획</tspan>
-                        </text>
-            <text font-family="Pretendard-Regular, Pretendard" font-size="18" fill="#FFF">
-                            <tspan x="49.387" y="87">수요분석</tspan>
-                            <tspan x="31.571" y="113">사업전략 수립</tspan>
-                        </text>
-        </g>
-        <circle stroke="#EEE" fill="#8E2626" opacity=".9" cx="80" cy="80" r="80"/>
-        <text font-family="Pretendard-Bold, Pretendard" font-size="20" font-weight="bold" fill="#FFF">
-                            <tspan x="42.719" y="57">관리/운영</tspan>
-                        </text>
-        <text font-family="Pretendard-Regular, Pretendard" font-size="18" fill="#FFF">
-                            <tspan x="31.571" y="87">운영계획 수립</tspan>
-                            <tspan x="49.387" y="113">설계관리</tspan>
-                        </text>
-        <g transform="translate(140 160)">
-            <circle stroke="#EEE" fill="#8E2626" opacity=".9" cx="80" cy="80" r="80"/>
-            <text font-family="Pretendard-Bold, Pretendard" font-size="20" font-weight="bold" fill="#FFF">
-                            <tspan x="45.93" y="57">개발계획</tspan>
-                        </text>
-            <text font-family="Pretendard-Regular, Pretendard" font-size="18" fill="#FFF">
-                            <tspan x="33.33" y="87">개발컨셉검토</tspan>
-                            <tspan x="33.33" y="113">개발규모검토</tspan>
-                        </text>
-        </g>
+    <g transform="translate(1 1)" stroke="#EEE" fill="none" fill-rule="evenodd">
+        <use mask="url(#b)" stroke-width="2" stroke-dasharray="4,4" xlink:href="#a"/>
+        <circle cx="80" cy="80" r="80" transform="translate(320)" fill="#8E2626"/>
+        <circle cx="80" cy="80" r="80" transform="translate(320 320)" fill="#8E2626"/>
+        <circle cx="80" cy="80" r="80" transform="translate(0 320)" fill="#8E2626"/>
+        <circle cx="80" cy="80" r="80" fill="#8E2626"/>
+        <circle cx="80" cy="80" r="80" transform="translate(160 160)" fill="#8E2626" opacity=".9"/>
     </g>
 </svg>
