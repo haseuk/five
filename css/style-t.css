@@ -1429,12 +1429,12 @@ body {
     top: 31.5625vw;
     right: auto;
     bottom: auto;
+    text-transform: uppercase;
   }
   .container .wrap .popup .pop-inner .pop-swiper .swiper-slide.slide2 .best .sub-tit {
     font-size: 1.5vw;
     font-weight: 700;
     color: #fff;
-    text-transform: uppercase;
     margin-bottom: 2.5vw;
   }
   .container .wrap .popup .pop-inner .pop-swiper .swiper-slide.slide2 .best ul li .tit,

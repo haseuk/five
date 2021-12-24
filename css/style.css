@@ -1222,12 +1222,12 @@ a {
     padding-bottom: 0vw;
     padding-left: 4.8vw;
     box-sizing: border-box;
+    text-transform: uppercase;
   }
   .container .wrap .popup .pop-inner .pop-swiper .swiper-slide.slide2 .best .sub-tit {
     font-size: 4.8vw;
     font-weight: 700;
     color: #fff;
-    text-transform: uppercase;
     margin-bottom: 4.26666667vw;
   }
   .container .wrap .popup .pop-inner .pop-swiper .swiper-slide.slide2 .best ul li {

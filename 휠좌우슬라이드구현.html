@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <style>
+
+    .swiper-containter {
+    }
+    .swiper-container,
+    .swiper-wrapper {
+      height: 100vh;
+      background: green;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: flex-end;
+      width: auto;
+      margin-right: 8px;
+    }
+    .swiper-slide img {
+      max-width: 780px;
+      max-height: 655px;
+    }
+
+    .projectInfo {
+      position: relative;
+      margin: 14px 0 13px 0;
+      position: relative;
+      z-index: -1;
+      text-transform: uppercase;
+    }
+
+    .projectInfo h2 {
+      margin: 0;
+    }
+    h3 {
+      margin: 8px 8px 8px 0;
+    }
+    .category,
+    .medium {
+      text-transform: none;
+      opacity: 0.4;
+    }
+    .medium {
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 100px;
+      font-style: italic;
+      padding: 0px 7px 1px 7px;
+    }
+
+
+    .thumbContainer {
+      opacity: 1;
+      transform: translateY(60%);
+    }
+    img,
+    video {
+      display: block;
+      position: relative;
+      max-width: calc(380px + 43vh);
+      max-height: calc(255px + 43vh);
+    }
+
+    .fadeInSlide {
+      animation-name: fadeInSlide;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(1, 0.055, 0.32, 1);
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInSlide {
+      0% {
+        transform: translateY(60%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="swiper-container">
+
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 1</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 2</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 3</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 4</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 5</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 6</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 7</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="thumbContainer">
+        <img src="https://picsum.photos/600/400">
+        <div class="projectInfo">
+          <h2 class="serif">Project 8</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".swiper-container", {
+    loopedSlides: 8,
+    loop: true,
+    slidesPerView: "auto",
+    freeMode: true,
+    mousewheel: {
+      releaseOnEdges: true,
+    },
+  });
+
+  var thumb = document.querySelectorAll(".thumbContainer");
+
+  thumb.forEach(function(image, index) {
+    var delay = index * 90;
+    image.classList.add("fadeInSlide");
+    image.style.animationDelay = delay + "ms";
+  });
+
+</script>
+</body>
+</html>
