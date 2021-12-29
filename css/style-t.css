@@ -49,12 +49,6 @@ a {
 .swiper-button:focus {
   outline: none!important;
 }
-:root {
-  --widthSize: calc(100vw - (100vw - 100%));
-}
-body {
-  width: var(--widthSize);
-}
 @media screen and (min-width: 769px) {
   html {
     font-family: Montserrat, sans-serif;
@@ -205,7 +199,7 @@ body {
     border-left: 1px solid #b7b7b7;
     border-right: 1px solid #b7b7b7;
     box-sizing: border-box;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 1;
     pointer-events: none;
   }
@@ -335,7 +329,7 @@ body {
     border-left: 1px solid #b7b7b7;
     border-right: 1px solid #6a5121;
     box-sizing: border-box;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 1;
     pointer-events: none;
   }
@@ -355,7 +349,7 @@ body {
     top: 50%;
     right: auto;
     bottom: auto;
-    margin-top: -12.5vw;
+    margin-top: -11.25vw;
   }
   .container .wrap article section.top .top-inner .t2 .t2-inner {
     position: relative;
@@ -364,10 +358,10 @@ body {
     left: 0vw;
   }
   .container .wrap article section.top .top-inner .t2 .t2-inner p {
-    font-size: 9.375vw;
+    font-size: 6.25vw;
     font-weight: 300;
     color: #0c0f0e;
-    line-height: 6.875vw;
+    line-height: 5.625vw;
     display: block;
     white-space: nowrap;
     position: absolute;
@@ -384,7 +378,7 @@ body {
     margin-left: 100%;
   }
   .container .wrap article section.top .top-inner .t2 .t2-inner p:nth-child(2) {
-    top: 8.375vw;
+    top: 5.625vw;
     margin-left: -200%;
   }
   .container .wrap article section.top .top-inner .t1,
@@ -451,10 +445,10 @@ body {
     margin-top: 0vw;
   }
   .container .wrap article section.top.active .top-inner .t2 .t2-inner p:nth-child(1) {
-    margin-left: -27%;
+    margin-left: 1.875vw;
   }
   .container .wrap article section.top.active .top-inner .t2 .t2-inner p:nth-child(2) {
-    margin-left: 5%;
+    margin-left: 7.25vw;
   }
   .container .wrap article section.values .swiper2 {
     width: 100%;
@@ -491,6 +485,7 @@ body {
     line-height: 2.75vw;
     font-weight: 500;
     margin-bottom: 1.25vw;
+    text-transform: uppercase;
   }
   .container .wrap article section.values .swiper2 .swiper-slide .t-wrap .txt {
     font-size: 1.125vw;
@@ -1154,7 +1149,7 @@ body {
     padding-bottom: 2.5vw;
     padding-left: 0vw;
     box-sizing: border-box;
-    height: 31.4375vw;
+    height: 29.0625vw;
   }
   .container .wrap article section.contact .cell {
     display: inline-block;
@@ -1219,7 +1214,7 @@ body {
     opacity: 0.8;
     position: absolute;
     left: 1.875vw;
-    top: 27.5625vw;
+    top: 25.1875vw;
     right: auto;
     bottom: auto;
   }
@@ -1232,8 +1227,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: 20;
-    display: none;
     overflow: auto;
+    display: none;
   }
   .container .wrap .popup .pop-inner {
     position: absolute;
@@ -1249,6 +1244,10 @@ body {
   .container .wrap .popup .pop-inner .pop-swiper {
     width: 96.25vw;
     height: 67.5vw;
+    display: none;
+  }
+  .container .wrap .popup .pop-inner .pop-swiper .swiper-wrapper {
+    height: 100% !important;
   }
   .container .wrap .popup .pop-inner .pop-swiper .swiper-slide {
     height: 100%;
@@ -1576,6 +1575,91 @@ body {
     background-image: url('../img/pc/btn-next-hover.svg');
     background-size: contain;
   }
+  .container .wrap .popup .pop-inner .proj-popup {
+    background-color: #8e2626;
+    width: 96.25vw;
+    height: 67.5vw;
+    display: none;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap {
+    padding-top: 7.5vw;
+    padding-right: 0vw;
+    padding-bottom: 2.5vw;
+    padding-left: 4.375vw;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap p {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap p.en-name {
+    font-size: 3.125vw;
+    line-height: 3.625vw;
+    margin-bottom: 1.5vw;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap p.kr-name {
+    font-size: 1.5vw;
+    line-height: 1.875vw;
+    font-weight: 500;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper {
+    margin-top: -6.25vw;
+    margin-right: 0vw;
+    margin-bottom: 0vw;
+    margin-left: 4.375vw;
+    padding-top: 6.25vw;
+    box-sizing: border-box;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide {
+    position: relative;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide .dim {
+    width: 75vw;
+    height: 42.5vw;
+    background-color: #000;
+    opacity: 0.7;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    transition: opacity 0.3s;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide img {
+    width: 75vw;
+    height: 680s;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide.swiper-slide-active .dim {
+    opacity: 0;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button {
+    right: 9vw;
+    top: 0vw;
+    left: auto;
+    bottom: auto;
+    width: 3.75vw;
+    height: 3.75vw;
+    opacity: 0.5;
+    margin-top: 0vw;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button:hover {
+    opacity: 1;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button:after {
+    display: none;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/icon-arrow-prev.svg');
+    background-size: contain;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button.swiper-button-next {
+    right: 3.75vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/icon-arrow-next.svg');
+    background-size: contain;
+  }
   .container .wrap .popup .pop-inner .pop-close {
     width: 2.75vw;
     height: 2.75vw;
@@ -1599,6 +1683,15 @@ body {
     transition: top 0.5s 0.1s;
   }
   .container .wrap .popup.open {
+    display: inline-block;
+  }
+  .container .wrap .popup.open .pop-inner .pop-swiper {
+    display: inline-block;
+  }
+  .container .wrap .popup.prj-open {
+    display: inline-block;
+  }
+  .container .wrap .popup.prj-open .pop-inner .proj-popup {
     display: inline-block;
   }
 }

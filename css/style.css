@@ -93,9 +93,9 @@ a {
     width: 100vw;
     height: 16vw;
     line-height: 16vw;
-    padding-top: 4vw;
+    padding-top: 2.66666667vw;
     padding-right: 4.8vw;
-    padding-bottom: 4vw;
+    padding-bottom: 5.6vw;
     padding-left: 4.8vw;
     box-sizing: border-box;
     position: fixed;
@@ -126,8 +126,8 @@ a {
     background-repeat: no-repeat;
     background-image: url('../img/mo/logo.svg');
     background-size: contain;
-    width: 144px;
-    height: 29px;
+    width: 100%;
+    height: 100%;
   }
   .container .wrap header nav {
     width: 40px;
@@ -176,8 +176,8 @@ a {
   }
   .container .wrap header.open h1 a {
     background-image: url('../img/mo/logo-w.svg');
-    width: 144px;
-    height: 29px;
+    width: 100%;
+    height: 100%;
   }
   .container .wrap header.open nav .menu {
     background-image: url('../img/mo/btn-close.svg');
@@ -214,7 +214,7 @@ a {
     height: 100%;
     background-color: #fff;
     margin-left: -0.26666667vw;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 1;
   }
   .container .wrap article section.visual .swiper {
@@ -310,7 +310,7 @@ a {
     height: 100vh;
     background-color: #6a5121;
     margin-left: -0.26666667vw;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 1;
   }
   .container .wrap article section.top:before {
@@ -349,13 +349,13 @@ a {
   .container .wrap article section.top .top-inner .t2 .t2-inner {
     position: relative;
     width: 100vw;
-    height: 27.73333333vw;
+    height: 40.53333333vw;
     left: 0vw;
   }
   .container .wrap article section.top .top-inner .t2 .t2-inner p {
-    font-size: 13.86666667vw;
+    font-size: 10.13333333vw;
     font-weight: 300;
-    line-height: 12.8vw;
+    line-height: 10.13333333vw;
     display: block;
     white-space: nowrap;
     position: absolute;
@@ -372,8 +372,11 @@ a {
     margin-left: 100%;
   }
   .container .wrap article section.top .top-inner .t2 .t2-inner p:nth-child(2) {
-    top: 14.93333333vw;
+    top: 20.26666667vw;
     margin-left: -200%;
+  }
+  .container .wrap article section.top .top-inner .t2 .t2-inner p + p {
+    text-align: right;
   }
   .container .wrap article section.top .top-inner .t1,
   .container .wrap article section.top .top-inner .t3,
@@ -393,7 +396,8 @@ a {
     transition: padding-top 0.8s 0.9s;
   }
   .container .wrap article section.top .top-inner .t3 {
-    top: 50%;
+    top: auto;
+    bottom: 16vw;
   }
   .container .wrap article section.top .top-inner .t3 p {
     font-family: 'Pretendard Variable', sans-serif;
@@ -412,10 +416,10 @@ a {
     padding-top: 0vw;
   }
   .container .wrap article section.top.active .top-inner .t2 .t2-inner p:nth-child(1) {
-    margin-left: -85%;
+    margin-left: 4.8vw;
   }
   .container .wrap article section.top.active .top-inner .t2 .t2-inner p:nth-child(2) {
-    margin-left: 5%;
+    margin-left: 8.26666667vw;
   }
   .container .wrap article section.values .swiper2 .swiper-slide {
     width: 80vw;
@@ -449,6 +453,7 @@ a {
     font-size: 6.4vw;
     font-weight: 500;
     margin-bottom: 2.13333333vw;
+    text-transform: uppercase;
   }
   .container .wrap article section.values .swiper2 .swiper-slide .t-wrap .txt {
     font-size: 3.73333333vw;
@@ -674,7 +679,30 @@ a {
     height: 100%;
   }
   .container .wrap article section.projects .swiper-button {
+    top: 24.53333333vw;
+    width: 6.93333333vw;
+    height: 6.93333333vw;
+    opacity: 0.5;
+    margin-top: 0vw;
+  }
+  .container .wrap article section.projects .swiper-button:hover {
+    opacity: 1;
+  }
+  .container .wrap article section.projects .swiper-button:after {
     display: none;
+  }
+  .container .wrap article section.projects .swiper-button.swiper-button-prev {
+    left: 77.06666667vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/icon-arrow-prev.svg');
+    background-size: contain;
+  }
+  .container .wrap article section.projects .swiper-button.swiper-button-next {
+    right: auto;
+    left: 88.26666667vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/icon-arrow-next.svg');
+    background-size: contain;
   }
   .container .wrap article section.work {
     background-color: #e6e0d4;
@@ -942,7 +970,7 @@ a {
   }
   .container .wrap article section.contact {
     background-color: #8e2626;
-    height: 69.33333333vw;
+    height: 63.46666667vw;
     overflow: hidden;
     padding-top: 1.6vw;
     box-sizing: border-box;
@@ -959,7 +987,7 @@ a {
     height: 100%;
     background-color: #fff;
     margin-left: -0.26666667vw;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: 1;
   }
   .container .wrap article section.contact .cell {
@@ -1030,7 +1058,7 @@ a {
     opacity: 0.8;
     position: absolute;
     left: 54.93333333vw;
-    top: 50.13333333vw;
+    top: 45.86666667vw;
     right: auto;
     bottom: auto;
     text-indent: -3.46666667vw;
@@ -1047,9 +1075,9 @@ a {
     bottom: auto;
     width: 100%;
     height: 100%;
-    display: none;
     z-index: 20;
     overflow: auto;
+    display: none;
   }
   .container .wrap .popup .pop-inner {
     position: absolute;
@@ -1060,6 +1088,7 @@ a {
   }
   .container .wrap .popup .pop-inner .pop-swiper {
     width: 100vw;
+    display: none;
   }
   .container .wrap .popup .pop-inner .pop-swiper .swiper-slide {
     padding-top: 18.66666667vw;
@@ -1329,6 +1358,89 @@ a {
   .container .wrap .popup .pop-inner .pop-swiper .swiper-button {
     display: none !important;
   }
+  .container .wrap .popup .pop-inner .proj-popup {
+    background-color: #8e2626;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap {
+    padding-top: 18.66666667vw;
+    padding-right: 9.06666667vw;
+    padding-bottom: 10.66666667vw;
+    padding-left: 4.8vw;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap p {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap p.en-name {
+    font-size: 8.53333333vw;
+    margin-bottom: 6.4vw;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .tit-wrap p.kr-name {
+    font-size: 6.4vw;
+    line-height: 6.93333333vw;
+    font-weight: 500;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper {
+    padding-top: 13.33333333vw;
+    padding-right: 0vw;
+    padding-bottom: 0vw;
+    padding-left: 4.8vw;
+    box-sizing: border-box;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide {
+    position: relative;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide .dim {
+    width: 85.33333333vw;
+    height: 85.33333333vw;
+    background-color: #000;
+    opacity: 0.7;
+    position: absolute;
+    left: 0vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    transition: opacity 0.3s;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide img {
+    width: 85.33333333vw;
+    height: 85.33333333vw;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-slide.swiper-slide-active .dim {
+    opacity: 0;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button {
+    left: 4.8vw;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 6.93333333vw;
+    height: 6.93333333vw;
+    opacity: 0.5;
+    margin-top: 0vw;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button:hover {
+    opacity: 1;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button:after {
+    display: none;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button.swiper-button-prev {
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/icon-arrow-prev.svg');
+    background-size: contain;
+  }
+  .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper .swiper-button.swiper-button-next {
+    left: 16vw;
+    background-repeat: no-repeat;
+    background-image: url('../img/mo/icon-arrow-next.svg');
+    background-size: contain;
+  }
   .container .wrap .popup .pop-inner .pop-close {
     width: 6.93333333vw;
     height: 6.93333333vw;
@@ -1352,6 +1464,15 @@ a {
     transition: top 0.5s 0.1s;
   }
   .container .wrap .popup.open {
+    display: inline-block;
+  }
+  .container .wrap .popup.open .pop-inner .pop-swiper {
+    display: inline-block;
+  }
+  .container .wrap .popup.prj-open {
+    display: inline-block;
+  }
+  .container .wrap .popup.prj-open .pop-inner .proj-popup {
     display: inline-block;
   }
 }
