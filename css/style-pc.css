@@ -243,7 +243,7 @@ a {
     right: auto;
     top: auto;
     width: 1200px;
-    height: 256px;
+    height: 330px;
   }
   .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner {
     position: relative;
@@ -251,10 +251,10 @@ a {
     height: 100%;
   }
   .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p {
-    font-size: 150px;
+    font-size: 120px;
     color: #fff;
-    height: 128px;
-    line-height: 128px;
+    height: 110px;
+    line-height: 110px;
     font-weight: 300;
     position: absolute;
     left: 0px;
@@ -262,16 +262,21 @@ a {
     right: auto;
     bottom: auto;
     overflow: hidden;
-    padding-top: 128px;
+    padding-top: 110px;
     box-sizing: border-box;
+    text-transform: uppercase;
   }
   .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p:nth-child(1) {
     top: 0px;
-    transition: padding-top 1s 1s;
+    transition: padding-top 1s 0.9s;
   }
   .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p:nth-child(2) {
-    top: 128px;
+    top: 110px;
     transition: padding-top 1s 1.1s;
+  }
+  .container .wrap article section.visual .swiper .swiper-slide .txt .t-inner p:nth-child(3) {
+    top: 220px;
+    transition: padding-top 1s 1.3s;
   }
   .container .wrap article section.visual .swiper .swiper-slide.slide1 .img {
     background: url("../img/pc/visual-1.png") no-repeat center center;
@@ -379,7 +384,8 @@ a {
   }
   .container .wrap article section.top .top-inner .t2 .t2-inner p:nth-child(2) {
     top: 90px;
-    left: -200%;
+    right: 100%;
+    transition: right 3s 0s;
   }
   .container .wrap article section.top .top-inner .t1,
   .container .wrap article section.top .top-inner .t3,
@@ -445,13 +451,12 @@ a {
     margin-top: 0px;
   }
   .container .wrap article section.top.active .top-inner .t2 .t2-inner p:nth-child(1) {
-    left: 42%;
-    transform: translateX(-50%);
+    left: 30px;
     margin-left: 0px;
   }
   .container .wrap article section.top.active .top-inner .t2 .t2-inner p:nth-child(2) {
-    left: 50%;
-    transform: translateX(-50%);
+    left: auto;
+    right: 45px;
     margin-left: 0px;
   }
   .container .wrap article section.values .swiper2 {
@@ -709,6 +714,13 @@ a {
     bottom: auto;
     margin-left: 420px;
     text-align: right;
+  }
+  .container .wrap article section.projects .proj-swiper .swiper-slide p.kr-name span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #999;
+    display: block;
+    margin-top: 8px;
   }
   .container .wrap article section.projects .proj-swiper .swiper-slide .view-proj {
     width: 620px;

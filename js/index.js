@@ -39,27 +39,30 @@ let projSwiper;
 let spaceBetweenVal;
 function wiChk() {
   if(wi > 2000) {
-    spaceBetweenVal = 0.125 * wi;
-  } else if(wi > 1600) {
-    spaceBetweenVal = 0.121875 * wi;
+    spaceBetweenVal = 0.125 * wi; // 200
+  } else if(wi > 1800) {
+    spaceBetweenVal = 0.123 * wi; // 196.8
   } else {
-    spaceBetweenVal = 0.13125 * wi;
+    spaceBetweenVal = 0.1209 * wi; // 192
   }
 }
 wiChk();
 
 window.addEventListener('resize', function () {
   wi = window.innerWidth;
-  if(wi > 1600) {
-    projSwiper.params.spaceBetween = 0.121875 * wi;
+  if(wi > 2000) {
+    projSwiper.params.spaceBetween = 0.125 * wi;
+  } else if(wi > 1800) {
+    projSwiper.params.spaceBetween = 0.123 * wi;
   } else {
-    projSwiper.params.spaceBetween = 0.13125 * wi;
+    projSwiper.params.spaceBetween = 0.1209 * wi;
   }
 });
 
 projSwiper = new Swiper('.swiper.proj-swiper', {
   speed: 800,
   slidesPerView:1.05,
+  loop: true,
   navigation: {
     nextEl: ".proj-next",
     prevEl: ".proj-prev",
@@ -68,20 +71,6 @@ projSwiper = new Swiper('.swiper.proj-swiper', {
     769: {
       slidesPerView:1.7,
       spaceBetween:spaceBetweenVal,
-    },
-  }
-});
-
-const popPrj = new Swiper('.swiper.pop-prj-swiper', {
-  speed: 800,
-  slidesPerView:1.05,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    769: {
-      slidesPerView:1.16,
     },
   }
 });
@@ -262,6 +251,7 @@ let popClose = document.querySelector('.pop-close');
 popClose.addEventListener('click', function() {
   popup.classList.remove('open', 'prj-open');
   popPrjSwiper.innerHTML = '';
+  popPrjSwiper.innerHTML = el;
   bodyUnFix();
 });
 
@@ -314,15 +304,22 @@ Array.prototype.forEach.call(viewBtn, function(e,idx) {
       bodyFix();
     }
     setTimeout(function() {
-      prjInfo(idx);
+      prjInfo(idx-2);
     },10)
   });
 });
 
 function prjInfo(v) {
-  enName.innerHTML = projectInfo[v].enNm;
-  krName.innerHTML = projectInfo[v].krNm;
-  slideImg(v);
+  let idx = v;
+  if(idx === 6) {
+    idx = 0;
+  }
+  if(idx === -1) {
+    idx = 5;
+  }
+  enName.innerHTML = projectInfo[idx].enNm;
+  krName.innerHTML = projectInfo[idx].krNm;
+  slideImg(idx);
 }
 function slideImg(v) {
   let prjNum = v+1;
@@ -331,4 +328,20 @@ function slideImg(v) {
     el = el + '<div class="swiper-slide"><div class="dim"></div><img src="img/mo/project-0'+prjNum+'-img-0'+i+'.png" alt="" class="mo"><img src="img/pc/project-0'+prjNum+'-img-0'+i+'.png" alt="" class="web"></div>'
   }
   popPrjSwiper.innerHTML = el;
+  new Swiper('.swiper.pop-prj-swiper', {
+    speed: 800,
+    slidesPerView:1.05,
+    initialSlide: 0,
+    navigation: {
+      nextEl: ".pop-proj-next",
+      prevEl: ".pop-proj-prev",
+    },
+    breakpoints: {
+      769: {
+        slidesPerView:1.16,
+      },
+    }
+  });
 }
+
+
