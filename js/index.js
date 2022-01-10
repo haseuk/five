@@ -251,7 +251,6 @@ let popClose = document.querySelector('.pop-close');
 popClose.addEventListener('click', function() {
   popup.classList.remove('open', 'prj-open');
   popPrjSwiper.innerHTML = '';
-  popPrjSwiper.innerHTML = el;
   bodyUnFix();
 });
 
@@ -305,7 +304,7 @@ Array.prototype.forEach.call(viewBtn, function(e,idx) {
     }
     setTimeout(function() {
       prjInfo(idx-2);
-    },10)
+    },100)
   });
 });
 
@@ -328,20 +327,22 @@ function slideImg(v) {
     el = el + '<div class="swiper-slide"><div class="dim"></div><img src="img/mo/project-0'+prjNum+'-img-0'+i+'.png" alt="" class="mo"><img src="img/pc/project-0'+prjNum+'-img-0'+i+'.png" alt="" class="web"></div>'
   }
   popPrjSwiper.innerHTML = el;
-  new Swiper('.swiper.pop-prj-swiper', {
-    speed: 800,
-    slidesPerView:1.05,
-    initialSlide: 0,
-    navigation: {
-      nextEl: ".pop-proj-next",
-      prevEl: ".pop-proj-prev",
-    },
-    breakpoints: {
-      769: {
-        slidesPerView:1.16,
+  setTimeout(function() {
+    new Swiper('.swiper.pop-prj-swiper', {
+      speed: 800,
+      slidesPerView:1.05,
+      // initialSlide: 0,
+      navigation: {
+        nextEl: ".pop-proj-next",
+        prevEl: ".pop-proj-prev",
       },
-    }
-  });
+      breakpoints: {
+        769: {
+          slidesPerView:1.16,
+        },
+      }
+    });
+  },100)
 }
 
 

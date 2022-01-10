@@ -1624,6 +1624,9 @@ a {
     opacity: 0.7;
     display: inline-block;
     vertical-align: middle;
+    margin-top: 0vw;
+    margin-right: 0vw;
+    margin-bottom: 0.3125vw;
     margin-left: 0.75vw;
   }
   .container .wrap .popup .pop-inner .proj-popup .pop-prj-swiper {
