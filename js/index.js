@@ -37,13 +37,17 @@ const popSwiper = new Swiper('.swiper.pop-swiper', {
 let wi = window.innerWidth;
 let projSwiper;
 let spaceBetweenVal;
+let spaceBetweenVal2;
 function wiChk() {
   if(wi > 2000) {
-    spaceBetweenVal = 0.125 * wi; // 200
+    spaceBetweenVal = 0.05 * wi;
+    spaceBetweenVal2 = 0.035 * wi;
   } else if(wi > 1800) {
-    spaceBetweenVal = 0.123 * wi; // 196.8
+    spaceBetweenVal = 0.0556 * wi;
+    spaceBetweenVal2 = 0.0389 * wi;
   } else {
-    spaceBetweenVal = 0.1209 * wi; // 192
+    spaceBetweenVal = 0.0625 * wi;
+    spaceBetweenVal2 = 0.04375 * wi;
   }
 }
 wiChk();
@@ -51,17 +55,20 @@ wiChk();
 window.addEventListener('resize', function () {
   wi = window.innerWidth;
   if(wi > 2000) {
-    projSwiper.params.spaceBetween = 0.125 * wi;
+    projSwiper.params.spaceBetween = 0.05 * wi;
+    projSwiper.params.spaceBetween2 = 0.035 * wi;
   } else if(wi > 1800) {
-    projSwiper.params.spaceBetween = 0.123 * wi;
+    projSwiper.params.spaceBetween = 0.0556 * wi;
+    projSwiper.params.spaceBetween2 = 0.0389 * wi;
   } else {
-    projSwiper.params.spaceBetween = 0.1209 * wi;
+    projSwiper.params.spaceBetween = 0.0625 * wi;
+    projSwiper.params.spaceBetween2 = 0.04375 * wi;
   }
 });
 
 projSwiper = new Swiper('.swiper.proj-swiper', {
   speed: 800,
-  slidesPerView:1.05,
+  slidesPerView:'auto',
   loop: true,
   navigation: {
     nextEl: ".proj-next",
@@ -69,7 +76,7 @@ projSwiper = new Swiper('.swiper.proj-swiper', {
   },
   breakpoints: {
     769: {
-      slidesPerView:1.7,
+      slidesPerView:'auto',
       spaceBetween:spaceBetweenVal,
     },
   }
@@ -131,25 +138,25 @@ let topPage = 0;
 let valPage = 0;
 let btm = 0;
 
-let scPos = document.documentElement.scrollTop || 0;
-let dir;
-function scrollDir() {
-  let docY = document.documentElement.scrollTop;
-  dir = docY - scPos >= 0 ? 1 : -1;
-  scPos = docY;
-  if(dir === 1) {
-    wrap.classList.add('down');
-    wrap.classList.remove('up');
-  } else {
-    wrap.classList.add('up');
-    wrap.classList.remove('down');
-  }
-}
+// let scPos = document.documentElement.scrollTop || 0;
+// let dir;
+// function scrollDir() {
+//   let docY = document.documentElement.scrollTop;
+//   dir = docY - scPos >= 0 ? 1 : -1;
+//   scPos = docY;
+//   if(dir === 1) {
+//     wrap.classList.add('down');
+//     wrap.classList.remove('up');
+//   } else {
+//     wrap.classList.add('up');
+//     wrap.classList.remove('down');
+//   }
+// }
 window.addEventListener('scroll', function() {
-  scrollDir();
-  if(document.documentElement.scrollTop <= 10) {
-    wrap.classList.remove('up', 'down');
-  }
+  // scrollDir();
+  // if(document.documentElement.scrollTop <= 10) {
+  //   wrap.classList.remove('up', 'down');
+  // }
   winTop = window.scrollY;
   visTop = visual.getBoundingClientRect().top;
   topTop = topEl.getBoundingClientRect().top;
@@ -296,51 +303,50 @@ let popPrjSwiper = document.querySelector('.pop-prj-swiper .swiper-wrapper');
 let num;
 let el = '';
 
-Array.prototype.forEach.call(viewBtn, function(e,idx) {
+Array.prototype.forEach.call(viewBtn, function(e) {
   e.addEventListener('click', function() {
+    let idx = e.parentNode.parentNode.getAttribute('data-swiper-slide-index');
     if(popup.className !== 'prj-open') {
       popup.classList.add('prj-open');
       bodyFix();
     }
     setTimeout(function() {
-      prjInfo(idx-2);
+      prjInfo(idx);
     },100)
   });
 });
 
 function prjInfo(v) {
   let idx = v;
-  if(idx === 6) {
-    idx = 0;
-  }
-  if(idx === -1) {
-    idx = 5;
-  }
   enName.innerHTML = projectInfo[idx].enNm;
   krName.innerHTML = projectInfo[idx].krNm;
   slideImg(idx);
 }
 function slideImg(v) {
-  let prjNum = v+1;
+  let prjNum = Number(v)+1;
+  if(prjNum < 10) {
+    prjNum = '0' + prjNum
+  }
   el = '';
   for (let i = 1; i < projectInfo[v].images+1; i++) {
-    el = el + '<div class="swiper-slide"><div class="dim"></div><img src="img/mo/project-0'+prjNum+'-img-0'+i+'.png" alt="" class="mo"><img src="img/pc/project-0'+prjNum+'-img-0'+i+'.png" alt="" class="web"></div>'
+    el = el + '<div class="swiper-slide"><img src="images/mo/project-'+prjNum+'-img-0'+i+'.png" alt="" class="mo"><img src="images/pc/project-'+prjNum+'-img-0'+i+'.png" alt="" class="web"></div>'
   }
   popPrjSwiper.innerHTML = el;
   setTimeout(function() {
     new Swiper('.swiper.pop-prj-swiper', {
       speed: 800,
-      slidesPerView:1.05,
-      // initialSlide: 0,
+      slidesPerView:'auto',
+      spaceBetween:10,
       navigation: {
         nextEl: ".pop-proj-next",
         prevEl: ".pop-proj-prev",
       },
       breakpoints: {
         769: {
-          slidesPerView:1.16,
+          slidesPerView:1.5,
+          spaceBetween: spaceBetweenVal2,
         },
-      }
+      },
     });
   },100)
 }

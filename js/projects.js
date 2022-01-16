@@ -35,4 +35,34 @@ const projectInfo = [
     krNm: '한국뇌연구원 3단계<span>\'19 현상설계 당선작</span>',
     images: 3
   },
+  {
+    proj1: 7,
+    enNm: 'Sunchang Donggye-myeon<br> Sports Complex',
+    krNm: '순창군 동계면 종합체육관<span>\'20 기획설계</span>',
+    images: 1
+  },
+  {
+    proj1: 8,
+    enNm: 'IKSAN Government Complex and<br> Public Land Development Plan',
+    krNm: '익산시 신청사 및 공유지 개발구상<span>\'19 제안공모 당선작</span>',
+    images: 1
+  },
+  {
+    proj1: 9,
+    enNm: 'CNNUH Pathogen Resources<br> Public Research Facility (BL3)',
+    krNm: '충남대학교병원<br class="mo"> 병원체자원 공용연구시설(BL3)<span>\'21 현상설계 당선작</span>',
+    images: 1
+  },
+  {
+    proj1: 10,
+    enNm: 'CNNUH XR Clinical Education<br> and Training Center',
+    krNm: '충남대학교병원<br class="mo"> XR임상교육훈련센터<span>\'21 현상설계 당선작</span>',
+    images: 2
+  },
+  {
+    proj1: 11,
+    enNm: 'KRISS Advanced Material<br> Research Center',
+    krNm: '한국표준과학연구원 노후신소재동<br class="mo"> 환경개선사업<span>\'21 준공</span>',
+    images: 1
+  },
 ]
