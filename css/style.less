@@ -18,10 +18,10 @@ a { .ib; .pointer; }
 
   .container {
     .wrap { .fs(0);
-      &.down {
-        header { .t(-60); }
-      }
-      &.up {
+      //&.down {
+      //  header { .t(-60); }
+      //}
+      &.up, &.down {
         header {
           &:after { .cnt; .abs; .lt; .f; .bgc(#fff); opacity: 0.7; visibility: visible; }
           h1 a { .contain('../images/mo/logo-black.svg'); }
@@ -199,8 +199,12 @@ a { .ib; .pointer; }
               }
               .swiper-button { .t(140); .wh(40,40); opacity: 1; .mt(0);
                 &:after { .hide; }
-                &.swiper-button-prev { .l(18); .contain('../images/mo/arrow-prev.svg'); }
-                &.swiper-button-next { .r(18); .contain('../images/mo/arrow-next.svg'); }
+                &.swiper-button-prev { .l(18); .contain('../images/mo/arrow-prev.svg');
+                  &:hover { .contain('../images/mo/arrow-prev-press.svg'); }
+                }
+                &.swiper-button-next { .r(18); .contain('../images/mo/arrow-next.svg');
+                  &:hover { .contain('../images/mo/arrow-next-press.svg'); }
+                }
               }
             }
           }

@@ -138,25 +138,25 @@ let topPage = 0;
 let valPage = 0;
 let btm = 0;
 
-// let scPos = document.documentElement.scrollTop || 0;
-// let dir;
-// function scrollDir() {
-//   let docY = document.documentElement.scrollTop;
-//   dir = docY - scPos >= 0 ? 1 : -1;
-//   scPos = docY;
-//   if(dir === 1) {
-//     wrap.classList.add('down');
-//     wrap.classList.remove('up');
-//   } else {
-//     wrap.classList.add('up');
-//     wrap.classList.remove('down');
-//   }
-// }
+let scPos = document.documentElement.scrollTop || 0;
+let dir;
+function scrollDir() {
+  let docY = document.documentElement.scrollTop;
+  dir = docY - scPos >= 0 ? 1 : -1;
+  scPos = docY;
+  if(dir === 1) {
+    wrap.classList.add('down');
+    wrap.classList.remove('up');
+  } else {
+    wrap.classList.add('up');
+    wrap.classList.remove('down');
+  }
+}
 window.addEventListener('scroll', function() {
-  // scrollDir();
-  // if(document.documentElement.scrollTop <= 10) {
-  //   wrap.classList.remove('up', 'down');
-  // }
+  scrollDir();
+  if(document.documentElement.scrollTop <= 10) {
+    wrap.classList.remove('up', 'down');
+  }
   winTop = window.scrollY;
   visTop = visual.getBoundingClientRect().top;
   topTop = topEl.getBoundingClientRect().top;

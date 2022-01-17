@@ -59,10 +59,8 @@ a {
   .container .wrap {
     font-size: 0vw;
   }
-  .container .wrap.down header {
-    top: -16vw;
-  }
-  .container .wrap.up header:after {
+  .container .wrap.up header:after,
+  .container .wrap.down header:after {
     content: '';
     display: block;
     position: absolute;
@@ -76,17 +74,20 @@ a {
     opacity: 0.7;
     visibility: visible;
   }
-  .container .wrap.up header h1 a {
+  .container .wrap.up header h1 a,
+  .container .wrap.down header h1 a {
     background-repeat: no-repeat;
     background-image: url('../images/mo/logo-black.svg');
     background-size: contain;
   }
-  .container .wrap.up header nav .menu {
+  .container .wrap.up header nav .menu,
+  .container .wrap.down header nav .menu {
     background-repeat: no-repeat;
     background-image: url('../images/mo/btn-menu-black.svg');
     background-size: contain;
   }
-  .container .wrap.up header.open:after {
+  .container .wrap.up header.open:after,
+  .container .wrap.down header.open:after {
     visibility: hidden;
   }
   .container .wrap header {
@@ -670,10 +671,20 @@ a {
     background-image: url('../images/mo/arrow-prev.svg');
     background-size: contain;
   }
+  .container .wrap article section.projects .proj-swiper .swiper-button.swiper-button-prev:hover {
+    background-repeat: no-repeat;
+    background-image: url('../images/mo/arrow-prev-press.svg');
+    background-size: contain;
+  }
   .container .wrap article section.projects .proj-swiper .swiper-button.swiper-button-next {
     right: 4.8vw;
     background-repeat: no-repeat;
     background-image: url('../images/mo/arrow-next.svg');
+    background-size: contain;
+  }
+  .container .wrap article section.projects .proj-swiper .swiper-button.swiper-button-next:hover {
+    background-repeat: no-repeat;
+    background-image: url('../images/mo/arrow-next-press.svg');
     background-size: contain;
   }
   .container .wrap article section.work {

@@ -18,10 +18,10 @@ a { .ib; .pointer; .mont; }
 
   .container {
     .wrap { .fs(0); .wf;
-      &.down {
-        header { .t(-120);  }
-      }
-      &.up {
+      //&.down {
+      //  header { .t(-120);  }
+      //}
+      &.up, &.down {
         header {
           &:after { .cnt; .abs; .lt; .f; .bgc(#fff); opacity: 0.7; visibility: visible; }
           h1 a { .contain('../images/mo/logo-black.svg'); }
@@ -187,9 +187,9 @@ a { .ib; .pointer; .mont; }
             h2 { color:#fff; }
             .proj-swiper { .pl(30); .-box; .h(960); .-box;
               .swiper-slide { .wh(620,620); .rel;
-                .s-inner { .rel; .f;
-                  .dim { .f; .bgc(#000); opacity: 0.6; .abs; .lt(0,50%); transform: translate(0,-50%); z-index: 1; pointer-events: none; }
-                  img { .f; transition: width 0.5s, height 0.5s; .abs; .lt(0,50%); transform: translate(0,-50%); }
+                .s-inner { .rel; .f; overflow: hidden;
+                  .dim { .f; .bgc(#000); opacity: 0.6; .abs; .lt; z-index: 1; pointer-events: none; .hide; }
+                  img { .f; transition: width 0.5s, height 0.5s; filter: brightness(0.5); }
                 }
                 p { .fs(18); .lh(26); color:#fff; .ib; transition: all 0.5s; text-transform: uppercase;
                   &.en-name { .abs; .lt(0,640); }
@@ -206,16 +206,17 @@ a { .ib; .pointer; .mont; }
 
                 &.swiper-slide-active {
                   .s-inner {
-                    .dim { opacity:0; transition: width 0.5s, height 0.5s; }
-                    img { transition: width 0.5s, height 0.5s; }
+                    img { transition: width 0.5s, height 0.5s; filter: none; }
                   }
                 }
                 &.swiper-slide-prev {
-                  .s-inner .dim { .f; transition: opacity 0s 1s; }
+                  .s-inner img { transition: filter 1s; }
                 }
               }
               .swiper-slide:hover {
-                .s-inner .dim { opacity: 0.6; }
+                .s-inner {
+                  img { transform: scale(1.2); filter: brightness(0.15); transition:all 1s, filter 0s; }
+                }
                 .view-proj:after { .ib; }
               }
               .swiper-button { .t(270); .wh(80,80); .m(0);
