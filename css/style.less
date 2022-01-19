@@ -11,7 +11,7 @@ img { backface-visibility: hidden; image-rendering: auto; .block; }
 a { .ib; .pointer; }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   html { .mont; scroll-behavior: smooth; }
   .web { .hide; }
   .mo { .ib; }
@@ -29,7 +29,7 @@ a { .ib; .pointer; }
           &.open:after { visibility: hidden; }
         }
       }
-      header { .wh(375,60); .lh(60); .p(10,18,21); .-box; .fix; .lt; z-index: 10; .clear; transition: top 0.5s 0.1s;
+      header { .wh(100%,60); .lh(60); .p(10,18,21); .-box; .fix; .lt; z-index: 10; .clear; transition: top 0.5s 0.1s;
         h1 { .ib; .wh(144,29); .rel; z-index: 1;
           a { .contain('../images/mo/logo.svg'); .f; }
         }
@@ -286,7 +286,7 @@ a { .ib; .pointer; }
 
       .popup { .fix; .lt; .f; z-index: 20; overflow: auto; .hide;
         .pop-inner { .abs; .lt;
-          .pop-swiper { .w(375); .hide;
+          .pop-swiper { .w(100vw); .hide;
             .swiper-slide { .p(70,0,128); .-box; .tl; .clear; .bgc(#8e2626);
               h3 { .fs(32); .lh(39); color:#fff; .mb(24); .pl(18); .-box; text-transform: uppercase; }
               .t-wrap {

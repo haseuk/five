@@ -12,26 +12,22 @@ const swiper2 = new Swiper('.swiper.swiper2', {
   speed:500,
   spaceBetween:0,
   breakpoints: {
-    769: {
+    481: {
       slidesPerView:3,
-      slidesPerGroup: 3,
+      slidesPerGroup:3,
       loopPreventsSlide: false,
     }
   }
 });
 const popSwiper = new Swiper('.swiper.pop-swiper', {
   autoHeight: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
     el: ".swiper-pagination",
   },
-  breakpoints: {
-    769: {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    }
-  }
 });
 
 let wi = window.innerWidth;
@@ -75,23 +71,24 @@ projSwiper = new Swiper('.swiper.proj-swiper', {
     prevEl: ".proj-prev",
   },
   breakpoints: {
-    769: {
+    481: {
       slidesPerView:'auto',
       spaceBetween:spaceBetweenVal,
     },
   }
 });
 
-if(wi > 769) {
+if(wi > 481) {
   swiper2.on('slideChange', function() {
+    console.log(swiper2.realIndex)
     if(swiper2.realIndex === 2) {
       swiper2.autoplay.stop();
     //   setTimeout(function() {
     //     pageServiceMove();
     //   },1000)
       document.querySelector('.swiper2').classList.add('idx2');
-    // } else {
-    //   document.querySelector('.swiper2').classList.remove('idx2');
+    } else {
+      document.querySelector('.swiper2').classList.remove('idx2');
     }
   });
 } else {
@@ -342,7 +339,7 @@ function slideImg(v) {
         prevEl: ".pop-proj-prev",
       },
       breakpoints: {
-        769: {
+        481: {
           slidesPerView:1.5,
           spaceBetween: spaceBetweenVal2,
         },

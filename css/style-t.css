@@ -55,7 +55,7 @@ a {
 ::-webkit-scrollbar-thumb {
   display: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) {
   html {
     font-family: Montserrat, sans-serif;
     scroll-behavior: smooth;
@@ -504,6 +504,9 @@ a {
   }
   .container .wrap article section.values .swiper2 .swiper-slide.slide5 {
     width: 33.3125vw !important;
+  }
+  .container .wrap article section.values .swiper2.idx2 .slide2 {
+    width: calc(33.375vw) !important;
   }
   .container .wrap article section.services .ser-wrap {
     position: relative;
